@@ -1,0 +1,10 @@
+<% if @bugs.count>0%>
+	<div align="center">
+		<h1> List of Bugs</h1>
+	</div>
+<%= render "bugs/bug", bugs: @bugs%>
+<% else %>
+<div align="center">
+  <h1> No Bug Found</h1>
+</div>
+<% end %>
